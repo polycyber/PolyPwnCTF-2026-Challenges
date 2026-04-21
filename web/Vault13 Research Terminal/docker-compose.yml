@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  haproxy:
+    build:
+      context: ./haproxy
+    image: vault13-haproxy:latest
+    container_name: vault13-haproxy
+    ports:
+      - "8888:8080"
+    depends_on:
+      - backend
+    networks:
+      - vault13
+  backend:
+    build:
+      context: ./backend
+    image: vault13-backend:latest
+    container_name: vault13-backend
+    hostname: backend
+    environment:
+      - FLAG=flag{smuggl3d_p4st_th3_w4st3l4nd_f1r3w4ll}
+    networks:
+      - vault13
+networks:
+  vault13:
+    driver: bridge

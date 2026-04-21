@@ -1,0 +1,23 @@
+# Code Machine 2
+
+**`Romain`** [GitHub](https://github.com/RomainL972)
+
+## Description (français)
+
+Une deuxième disquette est présente à côté de l'ordinateur, mais elle semble
+contenir un programme plus complexe. Vous devez donner le flag en entrée au
+programme lorsqu'il le demande. Le flag attendu par le programme est de
+format `[a-z0-9]+`. Une fois le flag trouvé, ajoutez `polycyber{...}` autour
+pour obtenir le flag final.
+
+## Description (english)
+
+A second floppy disk is present next to the computer, but it seems to contain
+a more complex program. You need to provide the flag as input to the program
+when it asks for it. The flag expected by the program is in the format
+`[a-z0-9]+`. Once you find the flag, add `polycyber{...}` around it to get
+the final flag.
+
+## Solution
+
+Solution of the challenge can be found [here](solution/).

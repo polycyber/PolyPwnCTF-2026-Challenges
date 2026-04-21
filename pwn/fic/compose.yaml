@@ -1,0 +1,8 @@
+services:
+  pwn:
+    build: ./
+    container_name: POD
+    ports:
+      - "1000:1000"
+    restart: unless-stopped
+    read_only: true

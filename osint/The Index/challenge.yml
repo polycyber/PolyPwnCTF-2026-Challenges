@@ -1,0 +1,32 @@
+name: The Index
+author: Léonard Renoud et Corentin Felten
+category: osint
+
+type: standard
+#https://res260.github.io/cfss
+value: 2
+
+description: |-
+  ## Description (français)
+
+  INSTITUTE MONITOR 2032-03-27 05:58:44 UTC+2 -- Dernier contact enregistré avec le Dr. Voss confirmé. Destinataire : Lev Morrow, assistant de recherche, Labo 7. Medium : messagerie interne chiffrée. Durée : 2 minutes 14 secondes. Contenu : classifié. Aucun contact ultérieur détecté. Morrow désigné comme témoin principal. Entretien planifié. Note : le sujet reste actif sur les réseaux sociaux publics. Surveillance recommandée.
+
+  Le format du flag est "polycyber{...}"
+
+  ## Description (english)
+
+  INSTITUTE MONITOR 2032-03-27 05:58:44 UTC+2 -- Last contact recorded with Dr. Voss confirmed. Recipient: Lev Morrow, research assistant, Lab 7. Medium: encrypted internal messaging. Duration: 2 minutes 14 seconds. Content: classified. No subsequent contact detected. Morrow designated as primary witness. Interview scheduled. Note: subject remains active on public social media. Surveillance recommended.
+
+  The flag format is "polycyber{...}"
+
+flags:
+  - polycyber{h3_left_s0meth1ng_b3h1nd}
+
+tags:
+  - osint
+  - A:Léonard Renoud
+  - A:Corentin Felten
+  - facile
+
+requirements: 
+  - Rules

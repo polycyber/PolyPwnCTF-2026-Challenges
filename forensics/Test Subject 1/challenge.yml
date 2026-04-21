@@ -1,0 +1,29 @@
+name: Test Subject 1
+author: chrichriGeorgie
+category: forensics
+
+type: standard
+value: 1
+
+description: |-
+  ## Description (français)
+
+  Le professeur veut que vous analysiez cet échantillon. Pourrez-vous percer le mystère?
+
+  ## Description (english)
+
+  The professor wants you to analyze this sample. Will you be able to solve the mystery?
+
+files:
+  - test_subject_1.doc    
+
+flags:
+- polycyber{CORRuP73d_3xPerIMEnt_REp0r7}
+
+tags:
+- forensic
+- A:chrichriGeorgie
+- facile
+
+requirements: 
+  - Rules

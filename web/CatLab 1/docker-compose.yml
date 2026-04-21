@@ -1,0 +1,29 @@
+services:
+  db:
+    image: ghcr.io/polycyber/polypwnctf-2026/catlab1-db:latest
+    restart: always
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      start_period: 10s
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    environment:
+      MYSQL_ROOT_PASSWORD: a1994c6aecfb34b3b2e7ef8dd51e4c4b
+      MYSQL_DATABASE: catlab_db
+      MYSQL_USER: catlab_user
+      MYSQL_PASSWORD: 28ea5040ce6e331d40e7b8b3d2b448a1
+    tmpfs:
+      - /var/lib/mysql
+
+  web:
+    image: ghcr.io/polycyber/polypwnctf-2026/catlab1-web:latest
+    ports:
+      - "8000:80"
+    environment:
+      DB_DATABASE: catlab_db
+      DB_USER: catlab_user
+      DB_PASSWORD: 28ea5040ce6e331d40e7b8b3d2b448a1
+    depends_on:
+      db:
+        condition: service_healthy

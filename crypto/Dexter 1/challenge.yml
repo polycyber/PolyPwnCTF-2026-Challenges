@@ -1,0 +1,33 @@
+name: Dee Dee-coded
+author: Hib00boo
+category: crypto
+
+type: standard
+value: 4
+
+description: |-
+  ## Description (français)
+  Tu es un petit génie. C'est pourquoi tu es incapable de comprendre comment cela a pu arriver ??? Le mot de passe de ton laboratoire secret a été changé et tu es désormais bloqué à l'extérieur ! <br>
+  Ton seul indice est ce papier sur lequel est inscrit un message cryptique...
+
+  ## Description (english)
+  You are a boy genius. That is why you are incapable of understanding how this could have possibly happened??? The password to your secret lab was changed and now you are locked out!  <br>
+  Your only clue is this paper with a cryptic message...
+
+flags:
+- POLYCYBER{MaNDArKxDEedEEFoReVEr}
+
+tags:
+- crypto
+- A:Hib00boo
+- facile
+- CFSS:0.1/TS:L/E:M/HSFC:N=3-5
+
+files:
+    - ransomnote.png
+
+hints:
+    - Mandark is in love with your older sister Dee Dee
+
+requirements: 
+  - Rules

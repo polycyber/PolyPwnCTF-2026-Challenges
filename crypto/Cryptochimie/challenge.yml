@@ -1,0 +1,35 @@
+
+name: "Cryptochimie"
+author: Dora
+category: crypto
+
+type: standard
+value: 2
+
+description: |-
+  ## Description (français)
+
+  Tout au fond du laboratoire secret, je trouve un petit bout de papier avec une inscription étrange qui semble avoir été laissée là par un scientifique ...
+  A quoi peut-elle correspondre ?
+
+  ## Description (english)
+  
+  At the very back of the secret laboratory, I find a small piece of paper with a strange inscription that seems to have been left there by a scientist...
+  What could it mean?
+
+flags:
+  - type: static
+    content: "polycyber{il0v3periodictabl3}"
+    data: case_insensitive
+
+tags:
+  - crypto
+  - A:Dora
+  - CFSS:0.1/TS:L/E:L/HSFC:N=1-2
+  - facile
+
+files:
+  - "Cryptolab.png"
+
+requirements: 
+  - Rules

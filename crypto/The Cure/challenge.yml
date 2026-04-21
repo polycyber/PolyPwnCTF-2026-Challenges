@@ -1,0 +1,32 @@
+name: The Cure
+author: Jean Decian
+category: crypto
+
+type: standard
+value: 3
+
+description: |-
+  ## Description (français)
+
+  Le monde est en train de s'effondrer. Le chercheur en chef Jason a réussi à synthétiser le remède contre le virus zombie, mais un groupe d'anarchistes piste ses traces numériques.
+  Pour protéger l'emplacement de la formule, Jason s'est caché loin d'ici et a laissé une note.
+
+  ## Description (english)
+
+  The world is falling apart. Head Scientist Jason has successfully synthesized the cure for the zombie virus, but a group of anarchists is tracking his digital trail.
+  To keep the formula’s location safe, Jason hid far away and left a note.
+
+flags:
+  - POLYCYBER{tH3_s3CRet_f0rmuLA_1s_83h!Nd_ThE_PaiN7!N6_!N_MY_0ffIce}
+
+files:
+  - files/note.png
+
+tags:
+  - crypto
+  - A:Jean Decian
+  - CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+  - facile
+
+requirements: 
+  - Rules

@@ -1,0 +1,396 @@
+/* ================================================================
+   CatLab v2.0 — Internal Portal Stylesheet
+   ================================================================ */
+
+/* ----- Reset & Base ------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+a { color: #58a6ff; text-decoration: none; }
+a:hover { color: #2ea043; }
+
+h1, h2, h3 { color: #238636; margin-top: 0; }
+
+/* ----- Login Page --------------------------------------------- */
+body.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image:
+        radial-gradient(ellipse at 20% 50%, rgba(35,134,54,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(88,166,255,0.05) 0%, transparent 50%);
+}
+
+.login-card {
+    background: #161b22;
+    padding: 2.5rem 2rem;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    box-shadow: 0 0 0 1px #238636, 0 0 40px rgba(35,134,54,0.15);
+    width: 380px;
+    text-align: center;
+}
+
+.login-logo {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #238636;
+    letter-spacing: 5px;
+    margin-bottom: 0.2rem;
+}
+
+.login-tagline {
+    font-size: 0.68rem;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.2rem;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(35,134,54,0.1);
+    border: 1px solid rgba(35,134,54,0.4);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 0.7rem;
+    color: #238636;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    background: #238636;
+    border-radius: 50%;
+    flex-shrink: 0;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(35,134,54,0.6); }
+    50%       { opacity: 0.6; box-shadow: 0 0 0 4px rgba(35,134,54,0); }
+}
+
+.login-footer-link {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 0.78rem;
+    color: #8b949e;
+}
+
+.login-footer-link a { color: #58a6ff; }
+.login-footer-link a:hover { color: #2ea043; }
+
+/* ----- Form Controls ------------------------------------------ */
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.72rem;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="url"] {
+    width: 100%;
+    padding: 10px 12px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: #c9d1d9;
+    font-family: inherit;
+    font-size: 0.9rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus {
+    outline: none;
+    border-color: #238636;
+    box-shadow: 0 0 0 3px rgba(35,134,54,0.12);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #238636;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn:hover  { background: #2ea043; }
+.btn:active { transform: scale(0.98); }
+.btn-full   { width: 100%; }
+
+/* ----- Alerts ------------------------------------------------- */
+.alert {
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.alert-error {
+    background: rgba(248,81,73,0.08);
+    border: 1px solid #f85149;
+    color: #f85149;
+}
+
+/* ----- Navigation --------------------------------------------- */
+nav {
+    background: #161b22;
+    border-bottom: 2px solid #238636;
+    padding: 0.85rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-logo {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #238636;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #58a6ff;
+    font-weight: bold;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover { color: #238636; }
+
+.nav-links .link-experiment { color: #f0883e; }
+.nav-links .link-experiment:hover { color: #ffa657; }
+
+.nav-links .link-logout { color: #8b949e; }
+.nav-links .link-logout:hover { color: #c9d1d9; }
+
+.admin-tag {
+    color: #f85149;
+    border: 1px solid #f85149;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.62rem;
+    vertical-align: middle;
+    margin-left: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ----- Page Layout -------------------------------------------- */
+.container {
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.page-header { margin-bottom: 1.5rem; }
+.page-header h1 { margin-bottom: 0.25rem; }
+.page-header p  { color: #8b949e; font-size: 0.85rem; margin: 0; }
+
+/* ----- Generic Lab Card --------------------------------------- */
+.lab-card {
+    background: #161b22;
+    padding: 1.5rem;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+/* ----- Cat Gallery Grid --------------------------------------- */
+.cat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.cat-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+
+.cat-card:hover {
+    border-color: #238636;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(35,134,54,0.18);
+}
+
+.cat-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #30363d;
+}
+
+.cat-card-body {
+    padding: 1rem 1.1rem;
+}
+
+.cat-subject-label {
+    font-size: 0.65rem;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 3px 0;
+}
+
+.cat-name {
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #c9d1d9;
+    margin: 0 0 0.6rem 0;
+}
+
+.cat-badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 20px;
+    font-size: 0.68rem;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.badge-success {
+    background: rgba(35,134,54,0.15);
+    border: 1px solid rgba(35,134,54,0.5);
+    color: #3fb950;
+}
+
+.badge-info {
+    background: rgba(88,166,255,0.1);
+    border: 1px solid rgba(88,166,255,0.3);
+    color: #58a6ff;
+}
+
+/* ----- Admin / SSRF Panel ------------------------------------- */
+.ssrf-form {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+
+.ssrf-form .form-group { flex: 1; margin-bottom: 0; }
+
+.result-pre {
+    background: #010409;
+    padding: 1rem;
+    border: 1px solid #238636;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 0.82rem;
+    white-space: pre-wrap;
+    word-break: break-all;
+    margin: 0;
+    color: #3fb950;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.result-block { margin-top: 1.5rem; }
+.result-block h3 { margin-bottom: 0.5rem; font-size: 0.9rem; color: #8b949e; }
+
+/* ----- Cat Stats Table ---------------------------------------- */
+.cat-divider {
+    border: none;
+    border-top: 1px solid #21262d;
+    margin: 0.8rem 0;
+}
+
+.cat-stats {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px 14px;
+    font-size: 0.75rem;
+}
+
+.cat-stat-key {
+    color: #6e7681;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    padding-top: 1px;
+}
+
+.cat-stat-val { color: #c9d1d9; }
+
+.stability-bar {
+    display: inline-block;
+    width: 64px;
+    height: 7px;
+    background: #21262d;
+    border-radius: 4px;
+    vertical-align: middle;
+    overflow: hidden;
+    margin-right: 5px;
+}
+
+.stability-fill {
+    height: 100%;
+    border-radius: 4px;
+}
+
+.badge-warn {
+    background: rgba(210,118,30,0.12);
+    border: 1px solid rgba(210,118,30,0.5);
+    color: #f0883e;
+}
+
+.badge-danger {
+    background: rgba(248,81,73,0.1);
+    border: 1px solid rgba(248,81,73,0.4);
+    color: #f85149;
+}

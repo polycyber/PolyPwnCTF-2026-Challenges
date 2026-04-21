@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Report an error | Concealed Warehouse{% endblock %}
+
+{% block content %}
+<h2>Report an error</h2>
+
+<p>
+	Use this form to report a stock inconsistency. An administrator will verify the URL provided.
+</p>
+
+<form method="POST">
+    <input type="url" name="url" placeholder="https://example.com/..." required>
+    <button>Report</button>
+</form>
+
+{% if message %}
+<p>
+	{{ message }}
+</p>
+{% endif %}
+{% endblock %}

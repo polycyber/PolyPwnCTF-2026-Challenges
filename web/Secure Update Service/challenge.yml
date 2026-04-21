@@ -1,0 +1,44 @@
+name: Secure Update Service
+author: ptrstr
+category: web
+
+type: zync
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:I/E:M/HSFC:N=6-10
+value: 8
+
+playbook_name: http
+deploy_parameters:
+  unique: false
+  image: sus:latest
+
+description: |-
+  ## Description (français)
+
+  J'ai entendu dire que le labo a récemment déployé un nouveau service de déploiement de mises à jour.
+  Avec les expériences qu'ils font...disons que j'aimerais avoir un certain levier.
+  Peut-être tu pourrais me donner accès à son serveur ?
+
+  NOTE: Pour partager des ports, le port non HTTP est disponible à utiliser avec https://github.com/ekzhang/bore/
+    Exemple: `bore local -t <server> -p <dest_port> <local_port>`
+
+  ## Description (english)
+
+  I heard that the lab recently deployed a new update deployment service.
+  With the experiments going on here... let's say I'd like some leverage.
+  Maybe you can get me access to its server?
+
+  NOTE: To forward ports, the non HTTP port is available to use with https://github.com/ekzhang/bore/
+    Example: `bore local -t <server> -p <dest_port> <local_port>`
+
+flags:
+  - POLYCYBER{v3rY_sUs_ind33d_d4868e05f168de9470be2ec8ccccdf92}
+
+tags:
+  - web
+  - A:ptrstr
+  - moyen
+
+requirements:
+  - Rules

@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  web:
+    image: secureform_admin
+    ports:
+      - "8080:80"
+    environment:
+      - DB_HOST=db
+      - DB_NAME=ctf_challenge
+      - DB_USER=ctf_user
+      - DB_PASS=ctf_password
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  db:
+    image: secureform_admin_db
+    environment:
+      - MYSQL_ROOT_PASSWORD=root_password
+      - MYSQL_DATABASE=ctf_challenge
+      - MYSQL_USER=ctf_user
+      - MYSQL_PASSWORD=ctf_password
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped

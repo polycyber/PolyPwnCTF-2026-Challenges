@@ -1,0 +1,32 @@
+name: "Nexus Labs — Stage 3"
+author: Pollux
+category: forensics
+
+type: standard
+
+value: 5
+
+description: |-
+  ## Description (français)
+
+  Nexus Labs utilise un pipeline de déploiement automatisé. Les traces de ce pipeline ne sont pas toujours là où on les cherche — parfois elles sont attachées à des objets existants.
+
+  Même instance que l'étape 1.
+
+  ## Description (english)
+
+  Nexus Labs runs an automated deployment pipeline. The traces of that pipeline aren't always where you'd expect — sometimes they're attached to existing objects, off to the side.
+
+  Same instance as stage 1.
+
+flags:
+- polycyber{g1t_n0t3s_4r3_th3_h1dd3n_d1mens10n}
+
+tags:
+- forensique
+- A:Pollux
+- CFSS:0.3/TS:I/E:L/HSFC:N=4-7
+- moyen
+
+requirements: 
+  - Rules

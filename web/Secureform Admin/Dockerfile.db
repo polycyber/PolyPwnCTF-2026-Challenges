@@ -1,0 +1,4 @@
+FROM mysql:8.0
+
+# Inline database initialization into the image instead of bind-mounting init.sql.
+COPY init.sql /docker-entrypoint-initdb.d/init.sql

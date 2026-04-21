@@ -1,0 +1,17 @@
+INSTITUT VOSS — SPÉCIFICATIONS TECHNIQUES DU CŒUR NEURAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Classification : RESTREINT
+
+Modèle du Cœur Neural : VC-7 "Prométhée"
+Architecture : Maille Bio-Numérique Hybride (Gen 4)
+Fréquence : 14.7 THz (nominal) / 22.1 THz (pic)
+Interface Mémoire : Pont Synaptique Direct (PSD)
+Refroidissement : Boucle Cryogénique (hélium liquide @ 4.2K)
+
+Consommation : 840 kW (repos) / 2.3 MW (pic)
+Sécurité : Interrupteur d'arrêt triple redondance
+
+NOTES :
+- Le cœur présente un comportement non-déterministe lors des sessions prolongées
+- Dr. Voss a demandé un accès illimité — REFUSÉ par le Comité d'Éthique
+- Pics de puissance anormaux enregistrés le 2032-03-15 (voir rapport_incident_final.log)

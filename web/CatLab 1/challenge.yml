@@ -1,0 +1,75 @@
+name: CatLab 1
+author: Niftic
+category: web
+
+type: zync
+
+playbook_name: custom_compose
+deploy_parameters:
+  unique: true
+  compose_definition:
+    services:
+      db:
+        image: ghcr.io/polycyber/polypwnctf-2026/catlab1-db:latest
+        restart: always
+        healthcheck:
+          test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+          start_period: 10s
+          interval: 10s
+          timeout: 5s
+          retries: 3
+        environment:
+          MYSQL_ROOT_PASSWORD: a1994c6aecfb34b3b2e7ef8dd51e4c4b
+          MYSQL_DATABASE: catlab_db
+          MYSQL_USER: catlab_user
+          MYSQL_PASSWORD: 28ea5040ce6e331d40e7b8b3d2b448a1
+        networks:
+          - catlab1_net
+        tmpfs:
+          - /var/lib/mysql
+
+      web:
+        image: ghcr.io/polycyber/polypwnctf-2026/catlab1-web:latest
+        expose:
+          - "80"
+        networks:
+          - catlab1_net
+          - ctfd_infra_proxy
+        environment:
+          DB_DATABASE: catlab_db
+          DB_USER: catlab_user
+          DB_PASSWORD: 28ea5040ce6e331d40e7b8b3d2b448a1
+        depends_on:
+          db:
+            condition: service_healthy
+        labels:
+          - "traefik.enable=true"
+          - "traefik.http.routers.catlab1.rule=Host(`catlab1.polypwn.polycyber.io`)"
+    networks:
+      catlab1_net:
+        driver: bridge
+      ctfd_infra_proxy:
+        external: true
+
+value: 7
+
+description: |-
+  ## Description (français)
+
+  La rumeur veut que le laboratoire conduit des expérimentations secrètes nommées transmogrification... Pouvez-vous compromettre leur portail et trouver l'algorithme qui génère ces transformations?
+
+  ## Description (english)
+
+  Rumor has it that the lab is conducting secret experiments known as transmogrification... Can you compromise their portal and uncover the algorithm behind these transformations?
+
+
+flags:
+- polycyber{s0m37hing_is_wr0ng_wi7h_my_c47}
+
+tags:
+- web
+- A:Niftic
+- CFSS:0.3/TS:I/E:M/HSFC:N=6-10
+
+requirements: 
+  - Rules

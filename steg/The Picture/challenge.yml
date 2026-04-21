@@ -1,0 +1,35 @@
+name: The Picture
+author: Léonard Renoud et Corentin Felten
+category: Stéganographie
+
+type: standard
+#https://res260.github.io/cfss
+value: 2
+
+description: |-
+  ## Description (français)
+
+  INSTITUTE MONITOR 2031-07-18 21:03:47 UTC+2 -- Paquet non enregistré intercepté sur le segment 4 du réseau auxiliaire. Adresse MAC source inconnue. Charge utile illisible. Dr. Voss identifié comme probable expéditeur. Paquet conservé pour analyse.
+
+  Le format du flag est "polycyber{...}"
+
+  ## Description (english)
+
+  INSTITUTE MONITOR 2031-07-18 21:03:47 UTC+2 -- Unregistered packet intercepted on auxiliary grid segment 4. Source MAC unknown. Payload unreadable. Dr. Voss flagged as likely originator. Packet stored for analysis.
+
+  The flag format is "polycyber{...}"
+
+files:
+  - files/image.jpg
+
+flags:
+  - polycyber{p1ctur3_fu77_0f_4n0m4l1es}
+
+tags:
+  - steg
+  - A:Léonard Renoud
+  - A:Corentin Felten
+  - facile
+
+requirements: 
+  - Rules

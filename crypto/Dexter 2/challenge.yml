@@ -1,0 +1,43 @@
+name: DexXOR's Lab
+author: Hib00boo
+category: crypto
+
+type: standard
+value: 3
+
+description: |-
+  ## Description (français)
+
+  Vous avez réussi à rentrer dans votre laboratoire, mais les systèmes de défense se sont déclenchés. Heureusement, vous gardez toujours le mot de passe d'arrêt dans votre sarrau. <br> 
+  Malheureusement, vous l'avez crypté à l'aide de mathématiques de pointe que seul un jeune génie pourrait comprendre. Ainsi, votre sœur ne peut pas entrer dans votre laboratoire sans votre permission. <br> 
+  Utilisez vos clés de sécurité pour découvrir le mot de passe.
+
+  CLE3 = 55a386208a16645a334a766379427a5957786c
+  CLE4 ⊕ CLE3 = 349dcc56e87f262e517920cfa7613833341607
+  CLE4 ⊕ CLE2 = 65d9ac2c253f2e2e25653acdec1a340951065e
+  CLE2 ⊕ CLE1 = a8849b39003a1b3b10180438007f0101000446
+  MDP ⊕ CLE3 ⊕ CLE1 ⊕ CLE4 ⊕ CLE2 = cc561b36ab1c7f50131a149a94725c4660771ed86c0837d83740
+
+  ## Description (english)
+
+  You managed to get back into your lab but the defense systems tripped. Thankfully, you always keep the shutdown password in your lab coat.<br> 
+  Unfortunately, you encrypted them using super high tech math that only a boy genius would understand. That way your sister can't get into your lab without your permission. <br>
+  Use your security keys to uncover the password.
+
+  KEY3 = 55a386208a16645a334a766379427a5957786c
+  KEY4 ⊕ KEY3 = 349dcc56e87f262e517920cfa7613833341607
+  KEY4 ⊕ KEY2 = 65d9ac2c253f2e2e25653acdec1a340951065e
+  KEY2 ⊕ KEY1 = a8849b39003a1b3b10180438007f0101000446
+  PW ⊕ KEY3 ⊕ KEY1 ⊕ KEY4 ⊕ KEY2 = cc561b36ab1c7f50131a149a94725c4660771ed86c0837d83740
+
+flags:
+- POLYCYBER{0m3letTe_Du_X0r}
+
+requirements:
+    - "Dee Dee-coded"
+
+tags:
+- crypto
+- A:Hib00boo
+- facile
+- CFSS:0.1/TS:B/E:L/HSFC:N=2-4

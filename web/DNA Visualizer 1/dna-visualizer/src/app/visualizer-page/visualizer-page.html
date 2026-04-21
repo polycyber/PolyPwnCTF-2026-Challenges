@@ -1,0 +1,60 @@
+
+<div class="window" style="margin: 2%; width: 30%;">
+      <div class="title-bar">
+        <div class="title-bar-text" style="font-size: medium; padding: 2%;">
+          <p>DNA Sequence Generation</p>
+        </div>
+      </div>
+      <div class="window-body">
+        <!-- Here is an html form that takes the following information to create a profile: the mode, which is a radio button choice between DNA (2-strand) and RNA (1-strand), as well as the sequence length (which is a dropdown with choices 5, 11, 17). -->
+        <form [formGroup]="generateForm"  (ngSubmit)="generate()">
+            <p><b> Valid DNA Nucleotides: </b></p>
+            <p>
+                A: Adenine <br>
+                T: Thymine <br>
+                C: Cytosine <br>
+                G: Guanine <br>
+                .: separator
+            </p>
+            <div class="field-row">
+            <input type="text" id="sequence" formControlName="sequence" required />
+            </div>
+          <!-- Then a button to submit the form, and send it using the function that sends a post request defined in the component's javascript file -->
+            <br /><br />
+            <button type="submit" style="font-size: medium; margin: 0.2%;">Submit</button>
+        </form>
+        <!-- Add a window with red error text when error, or green OK test when submitted successfully. It will be toggled by the javascript of the angular component. -->
+        @if (submissionStatus()) {
+        <div class="window" style="margin-top: 20px;">
+            <div class="title-bar">
+                <div class="title-bar-text" style="font-size: small; padding: 2%;">
+                    <p>Status</p>
+                </div>
+            </div>
+            <div class="window-body">
+               <p [style.color]="submissionSuccess() ? 'green' : 'red'">
+               {{ submissionStatus() }}
+               </p>
+            </div>
+      </div>
+    }
+      
+    </div>    
+
+</div>
+
+
+@if (submissionSuccess()) {
+    <div class="window" style="margin: 2%; width: 30%;">
+      <div class="title-bar">
+        <div class="title-bar-text" style="font-size: medium; padding: 5%;">
+          <p><b>MOLECULE RENDERING</b></p>
+        </div>
+      </div>
+      <div class="window-body" style="white-space: pre-wrap; color: midnightblue; line-height:20px; font-weight: bold; font-size: large;">
+        <!-- <p [innerHTML]="moleculeResults()"></p> -->
+        {{ moleculeResults() }}
+      </div>
+</div>
+}
+      

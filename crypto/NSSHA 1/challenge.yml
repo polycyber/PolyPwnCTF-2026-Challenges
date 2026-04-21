@@ -1,0 +1,44 @@
+name: NSSHA 1
+author: ptrstr
+category: crypto
+
+type: zync
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:I/E:M/HSFC:Y=7-12
+value: 7
+
+playbook_name: tcp
+
+deploy_parameters:
+  image: nssha-1
+  unique: true
+  published_ports:
+    - 8888
+
+description: |-
+  ## Description (français)
+
+  Dans le cadre des nouvelles procédures IAM suivies par le laboratoire, nous disposons maintenant d'un mot de passe universel pour le laboratoire.
+
+  Malheureusement, je l’ai perdu, mais j’aimerais beaucoup le récupérer si vous êtes en mesure de m'aider...
+
+  ## Description (english)
+
+  As part of the new IAM procedures the lab is following, we now have a universal password for the lab.
+
+  Unfortunately, I lost it, but would love to recover it if you're able to...
+
+flags:
+  - POLYCYBER{not_so_secure_hash}
+
+files:
+  - challenge/main.py
+
+tags:
+  - crypto
+  - A:ptrstr
+  - moyen
+
+requirements: 
+  - Rules

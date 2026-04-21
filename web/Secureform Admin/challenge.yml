@@ -1,0 +1,92 @@
+  name: secureform-admin
+  author: Seneque
+  category: web
+
+  type: zync
+
+  playbook_name: custom_compose # Two services: PHP/Apache web + MySQL DB
+  deploy_parameters:
+    unique: false
+    compose_definition:
+      services:
+        web:
+          image: secureform_admin
+          environment:
+            DB_HOST: db
+            DB_NAME: ctf_challenge
+            DB_USER: ctf_user
+            DB_PASS: ctf_password
+            FLAG: ${FLAG}
+          labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.site_{{ compose_project }}.rule=Host(`{{ compose_project }}.{{ domain_root }}`)"
+            - "traefik.http.services.site_{{ compose_project }}.loadbalancer.server.port=80"
+          networks:
+            - secureform_internal
+            - traefik_proxy
+          depends_on:
+            db:
+              condition: service_healthy
+          restart: unless-stopped
+
+        db:
+          image: secureform_admin_db
+          environment:
+            MYSQL_ROOT_PASSWORD: root_password
+            MYSQL_DATABASE: ctf_challenge
+            MYSQL_USER: ctf_user
+            MYSQL_PASSWORD: ctf_password
+          networks:
+            - secureform_internal
+          healthcheck:
+            test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+            interval: 5s
+            timeout: 5s
+            retries: 10
+          restart: unless-stopped
+      networks:
+        secureform_internal:
+          name: "{{ compose_project }}_net"
+          driver: bridge
+        traefik_proxy:
+          name: "{{ traefik_network }}"
+          external: true
+    env:
+      FLAG: "POLYCYBER{bl1nd_sqli_0rd3r_by}"
+      TZ: America/Toronto
+
+  # Challenge Difficulty Scoring System (CFSS)
+  # https://res260.github.io/cfss/
+  # Format: CFSS:X.X/TS:X/E:X/HSFC:N=X-X
+  value: 10
+
+  description: |-
+    ## Description (français)
+
+    Vous avez découvert le panneau d'administration d'un formulaire de contact appelé **SecureForm**.
+    L'accès est protégé par un code PIN à 4 chiffres... mais est-il vraiment sécurisé ?
+
+    Une fois à l'intérieur, le tableau de bord liste les soumissions du formulaire et propose
+    des options de tri. Le développeur a voulu imiter la sanitisation de WordPress, mais
+    quelque chose lui a échappé.
+
+
+
+    ## Description (english)
+
+    You've discovered the admin panel of a contact form application called **SecureForm**.
+    Access is protected by a 4-digit PIN... but is it really secure?
+
+    Once inside, the dashboard lists form submissions and offers sorting options.
+    The developer tried to mimic WordPress sanitization, but something slipped through.
+
+  flags:
+    - POLYCYBER{bl1nd_sqli_0rd3r_by}
+
+  tags:
+    - A:Seneque # Author tag
+    - V:PolyPWN # Venue/Event tag
+    - CFSS:2.5/TS:B/E:C/HSFC:N=5-15 # Difficulty scoring
+
+  requirements: 
+    - Rules

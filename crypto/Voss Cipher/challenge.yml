@@ -1,0 +1,35 @@
+name: Voss Cipher
+author: Léonard Renoud et Corentin Felten
+category: Cryptography
+
+type: standard
+#https://res260.github.io/cfss
+value: 2
+
+description: |-
+  ## Description (français)
+
+  INSTITUTE MONITOR 2031-02-09 16:00:11 UTC+2 -- Paquet de données anormal récupéré sur le disque de sauvegarde du Labo 7. Intégrité du fichier : partielle. Origine : poste de travail du Dr. Voss. Contenu : chiffré. Extraction forensique recommandée.
+
+  Le format du flag est "polycyber{...}"
+
+  ## Description (english)
+
+  INSTITUTE MONITOR 2031-02-09 16:00:11 UTC+2 -- Anomalous data packet recovered from Lab 7 backup drive. File integrity: partial. Origin: Dr. Voss workstation. Contents: encrypted. Forensic extraction recommended.
+
+  The flag format is "polycyber{...}"
+
+files:
+  - files/file.txt
+
+flags:
+  - polycyber{b3g1nN1ng_0f_th3_pr0j3ct}
+
+tags:
+  - crypto
+  - A:Léonard Renoud
+  - A:Corentin Felten
+  - facile
+
+requirements: 
+  - Rules
