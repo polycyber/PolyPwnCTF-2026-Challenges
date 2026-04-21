@@ -1,0 +1,25 @@
+RAPPORT D'INCIDENT — FINAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ID Rapport : IR-2032-0327-001
+Rédigé par : Système Automatisé
+Classification : CRITIQUE
+
+CHRONOLOGIE :
+[2032-03-27 01:00] Dr. Voss entré au Labo 7 via contournement d'urgence.
+[2032-03-27 01:15] Cœur Neural VC-7 activé hors fenêtre prévue.
+[2032-03-27 02:30] Consommation à 2.1 MW. Alarmes déclenchées.
+[2032-03-27 03:00] Le cœur a émis une signature électromagnétique inconnue.
+[2032-03-27 03:45] Toutes les caméras du Labo 7 hors ligne simultanément.
+[2032-03-27 04:09] Dernier paquet télémétrique reçu. Contenu : "NULL RETURN"
+[2032-03-27 04:09] NeuralOS suspendu. Labo scellé à distance.
+[2032-03-27 06:15] Équipe de récupération envoyée. Dr. Voss introuvable.
+
+ÉVALUATION :
+Le Labo 7 est intact mais le Cœur Neural VC-7 est hors service.
+Le badge du Dr. Voss a été retrouvé au sol près de l'interface du cœur.
+Aucune trace biologique détectée.
+Les banques mémoire du cœur montrent 43% de corruption.
+Les données restantes sont chiffrées avec un algorithme inconnu.
+
+STATUT : ENQUÊTE EN COURS
+RECOMMANDATION : Ne pas tenter de redémarrer le cœur.

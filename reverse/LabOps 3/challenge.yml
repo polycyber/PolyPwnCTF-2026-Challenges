@@ -1,0 +1,37 @@
+name: LabOps - Detector (Gold license)
+author: ptrstr (Kyle Bouchard)
+category: reverse
+
+type: standard
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:A/E:M/HSFC:Y=10-16
+value: 15
+
+connection_info: Use the same instance as the first challenge of the track
+
+description: |-
+  ## Description (français)
+
+  Votre superviseur de laboratoire vous a demandé d'utiliser un nouvel outil pour collecter et analyser de nouveaux échantillons de laboratoire.<br>
+  Malheureusement, le service informatique n'a plus de clés de licence, mais vous avez promis d'avoir les rapports prêts avant la fin de la journée…<br>
+
+  Serez-vous en mesure de collecter les flags à temps ?
+
+  ## Description (english)
+
+  Your lab supervisor has asked you to use a new tool to collect and analyze new lab samples.<br>
+  Unfortunately, the IT department ran out of license keys but you promised to have the reports ready by the end of day...<br>
+
+  Will you be able to collect the flags in time?
+
+# it's possible to complete chal 3 w/o chal 1 and 2
+flags:
+  - POLYCYBER{h4nD_r0ll3d_h4SH}
+
+tags:
+  - reverse
+  - A:ptrstr
+  - difficile
+
+requirements: 
+  - Rules

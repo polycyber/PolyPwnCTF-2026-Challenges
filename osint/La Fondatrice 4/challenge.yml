@@ -1,0 +1,58 @@
+name: "La Fondatrice 4"
+author: F1b0n4cc1
+category: osint
+
+type: standard
+value: 8
+
+description: |-
+  ## Description (français)
+
+  Enfin nous connaissons le nom complet de la fondatrice! Le nom du laboratoire COMET a plus de sens tout à coup. <br>
+  
+  Un illusionniste, un musicien et un astronome connu... qu'ont-ils en commun? <br>
+  Votre directrice avait mentionné que la fondatrice avait dissimulé l'ingrédient secret dans un texte du 21ème siècle... nous avons des raisons de croire qu'elle aurait choisi une série de roman pour y laisser des "easter eggs", telles des références aux 3 personnes historiques trouvées précédemment. <br>
+  
+  Si on arrivait à la retrouver, nous pourrions découvrir l'élément secret qui est révélé à la fin du 1er roman de cette série, et compléter notre antidote!
+
+  ATTENTION: Le flag doit être donné en *anglais*, puisque le roman source a été écrit en anglais.
+  
+  (Format: "nomdelelementsecret" , sans accents, ponctuation ni espaces)
+
+  ## Description (english)
+
+  Finally, we know the founder's full name! The name of the COMET laboratory suddenly makes more sense. <br>
+
+  An illusionist, a musician, and a known astronomer... what do they have in common? <br>
+  Your director mentioned that the founder hid the secret ingredient in a 21st-century text... we have reason to believe that she chose a series of novels in which to leave easter eggs, such as references to the three historical figures found previously. <br>
+  
+  If we could find it, we might discover the secret element that is revealed at the end of the first novel in this series and complete our antidote!
+  
+  NOTE: This flag must be given in *english*, like in the novel.
+  
+  (Format: "nameofthesecretelement" , without accents, punctuation, nor spaces)
+
+# files:
+#   - ./files/intro.pdf
+
+hints:
+  - FR - La réponse contient 10 caractères. EN - The answer contains 10 characters.
+  - {
+      content: "FR - Le roman fait partie d'une série de fiction pour jeunes adultes, qui contient des références vers Houdini, Edmond Halley et Beethoven. EN - The novel is part of a young adult fiction series that contains references to Houdini, Edmond Halley, and Beethoven.",
+      cost: 1
+  }
+
+attempts: 10
+
+flags:
+  - type: static
+    content: "ironsolute"
+    data: case_insensitive
+
+requirements:
+- "La Fondatrice 3"
+
+tags:
+- osint
+- A:F1b0n4cc1
+- difficile

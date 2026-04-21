@@ -1,0 +1,39 @@
+name: Rabb-IT H.O.L.
+author: Kalnyia
+category: misc
+
+type: zync
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:M/HSFC:N=4-7
+value: 6
+
+playbook_name: tcp
+
+deploy_parameters:
+  image: rabb-it-hol
+  unique: false
+  published_ports:
+    - 80/http
+    - 22/ssh
+
+# connection_info: si nécessaire
+
+description: |-
+  ## Description (français)
+
+  Il semblerait que le professeur du laboratoire avait un contrat avec une entreprise pour sécuriser son laboratoire. Une vieille machine est apparemment encore connectée à un serveur de développement.
+
+  ## Description (english)
+
+  It seems that the lab professor had a contract with a company to secure his laboratory. An old machine is apparently still connected to one of their development servers.
+
+flags:
+- POLYCYBER{4LW4YS_CH3CK_7H3_F4V1C0N}
+
+tags:
+- misc
+- A:Kalnyia
+- moyen
+
+requirements: 
+  - Rules

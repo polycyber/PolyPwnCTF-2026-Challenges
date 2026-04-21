@@ -1,0 +1,26 @@
+.{
+    .name = .labops,
+    .version = "0.0.0",
+    .fingerprint = 0x5e31da9a633dbf09,
+    .minimum_zig_version = "0.15.2",
+    .dependencies = .{
+        .raylib_zig = .{
+            .url = "git+https://github.com/raylib-zig/raylib-zig?ref=devel#a4d18b2d1cf8fdddec68b5b084535fca0475f466",
+            .hash = "raylib_zig-5.6.0-dev-KE8REL5MBQAf3p497t52Xw9P7ojndIkVOWPXnLiLLw2P",
+        },
+        .emsdk = .{
+            .url = "git+https://github.com/emscripten-core/emsdk?ref=4.0.9#3bcf1dcd01f040f370e10fe673a092d9ed79ebb5",
+            .hash = "N-V-__8AAJl1DwBezhYo_VE6f53mPVm00R-Fk28NPW7P14EQ",
+        },
+        .httpz = .{
+            .url = "git+https://github.com/karlseguin/http.zig?ref=master#9ef2ffe8d611ff2e1081e5cf39cb4632c145c5b9",
+            .hash = "httpz-0.0.0-PNVzrIowBwAFr_kqBN1W4KBMC2Ofutasj2ZfNAIcfTzF",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "resources",
+    },
+}

@@ -1,0 +1,45 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "SolutionMixer"
+author: "1t1n1"
+category: reverse
+description: |-
+    ## Description (français)
+
+    Nous sommes parvenus à mettre la main sur le simulateur de réaction chimique du scientifique! Bien sûr, le logiciel n'est pas encore totalement terminé, mais si nous pouvions mettre la main sur la clé qu'il utilise pour chiffrer ses solutions exceptionnelles, nous pourrions déchiffrer ses futures découvertes!
+
+    ## Description (english)
+
+    We managed to get our hands on the scientist's chemical reaction simulator! Of course, the software isn't fully finished yet, but if we could get our hands on the key he uses to encrypt his exceptional solutions, we could decrypt his future discoveries!
+
+# CFSS:0.1/TS:I/E:M/HSFC:Y=7-12
+value: 10
+type: "zync"
+
+deploy_parameters:
+  image: solution-mixer
+  published_ports: 
+    - 34512
+  unique: true
+
+playbook_name: tcp
+
+flags:
+    - "polycyber{N0t_MuCh_0f_4n_RNG}"
+
+files:
+    - files/exceptional_solutions.enc # (fourni aux participants)
+    - files/SolutionMixer.AppImage # (fourni aux participants)
+    - files/SolutionMixerServer # (sur le serveur et fourni aux participants)
+    # - files/flag # (sur le serveur SEULEMENT)
+
+tags:
+- CFSS:0.1/TS:I/E:M/HSFC:Y=7-12
+- reverse
+- A:1t1n1
+- moyen
+
+requirements: 
+  - Rules

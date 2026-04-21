@@ -1,0 +1,47 @@
+
+<div class="window" style="margin: 2%; width: 40%;">
+      <div class="title-bar">
+        <div class="title-bar-text" style="font-size: medium; padding: 2%;">
+          <p>Create your DNA profile (*Required)</p>
+        </div>
+      </div>
+      <div class="window-body">
+        <!-- Here is an html form that takes the following information to create a profile: the mode, which is a radio button choice between DNA (2-strand) and RNA (1-strand), as well as the sequence length (which is a dropdown with choices 5, 11, 17). -->
+        <form [formGroup]="profileForm"  (ngSubmit)="submitProfile()">
+            <p>Select Genetic Mode:</p>
+            <div class="field-row">
+            <input type="radio" id="radio-dna" formControlName="mode" value="dna" required />
+            <label for="radio-dna">DNA (2-strand)</label>
+            </div>
+            <div class="field-row">
+            <input type="radio" id="radio-rna" formControlName="mode" value="rna" required />
+            <label for="radio-rna">RNA (1-strand)</label>
+            </div>
+          <br /><br />
+          <label for="length">Sequence Length:</label>
+          <select id="length" formControlName="sequence_length" required>
+            <option [ngValue]="5">5</option>
+            <option [ngValue]="11">11</option>
+            <option [ngValue]="17">17</option>
+          </select>
+          <!-- Then a button to submit the form, and send it using the function that sends a post request defined in the component's javascript file -->
+            <br /><br />
+            <button type="submit" style="font-size: medium; margin: 0.2%;">Submit</button>
+        </form>
+        <!-- Add a window with red error text when error, or green OK test when submitted successfully. It will be toggled by the javascript of the angular component. -->
+        @if (submissionStatus()) {
+        <div class="window" style="margin-top: 20px;">
+            <div class="title-bar">
+                <div class="title-bar-text" style="font-size: small; padding: 2%;">
+                    <p>Status</p>
+                </div>
+            </div>
+            <div class="window-body">
+               <p [style.color]="submissionSuccess() ? 'green' : 'red'">
+               {{ submissionStatus() }}
+               </p>
+            </div>
+      </div>
+    }
+      
+    </div>    

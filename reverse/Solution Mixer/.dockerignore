@@ -1,0 +1,32 @@
+build/
+build_static/
+*.o
+*.a
+*.so
+*.dylib
+.cursor/
+*.log
+*.i64
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+CMakeCache.txt
+CMakeFiles/
+*.cmake
+!CMakeLists.txt
+# Allow files/flag.txt for Docker, but exclude other flag.txt files
+flag.txt
+!files/flag.txt
+# Allow files/exceptional_solutions.enc for Docker
+!files/exceptional_solutions.enc
+files/SolutionMixer
+# Note: files/SolutionMixerServer is needed for Docker, so don't exclude it
+checkpoint-1/
+idees.txt
+solution.txt
+solution.md
+README.md
+challenge.yaml
+

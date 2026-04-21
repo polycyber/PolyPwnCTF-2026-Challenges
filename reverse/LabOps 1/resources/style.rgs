@@ -1,0 +1,17 @@
+    rg.setStyle(.default, .{ .control = .border_color_normal }, 0x1c8d00ff);
+    rg.setStyle(.default, .{ .control = .base_color_normal }, 0x161313ff);
+    rg.setStyle(.default, .{ .control = .text_color_normal }, 0x38f620ff);
+    rg.setStyle(.default, .{ .control = .border_color_focused }, 0xc3fbc6ff);
+    rg.setStyle(.default, .{ .control = .base_color_focused }, 0x43bf2eff);
+    rg.setStyle(.default, .{ .control = .text_color_focused }, 0xdcfadcff);
+    rg.setStyle(.default, .{ .control = .border_color_pressed }, 0x1f5b19ff);
+    rg.setStyle(.default, .{ .control = .base_color_pressed }, 0x43ff28ff);
+    rg.setStyle(.default, .{ .control = .text_color_pressed }, 0x1e6f15ff);
+    rg.setStyle(.default, .{ .control = .border_color_disabled }, 0x223b22ff);
+    rg.setStyle(.default, .{ .control = .base_color_disabled }, 0x182c18ff);
+    rg.setStyle(.default, .{ .control = .text_color_disabled }, 0x244125ff);
+    rg.setStyle(.default, .{ .control = .text_size }, 0x00000010);
+    rg.setStyle(.default, .{ .control = .text_spacing }, 0x00000000);
+    rg.setStyle(.default, .{ .control = .line_color }, 0xe6fce3ff);
+    rg.setStyle(.default, .{ .control = .background_color }, 0x0c1505ff);
+    rg.setStyle(.default, .{ .control = .text_line_spacing }, 0x00000018);

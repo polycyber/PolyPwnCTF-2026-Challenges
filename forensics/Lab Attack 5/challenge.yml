@@ -1,0 +1,41 @@
+name: Lab Attack 5
+author: ChrichriGeorgie
+category: forensics
+
+type: standard
+value: 3
+
+description: |-
+  ## Description (français)
+  
+  Le Dr. Moreau a reçu un appel du "support technique". Depuis l'appel, son poste semble avoir été compromis. Comprenez ce qui se cache derrière l'attaque.
+  
+  Selon les alertes, le poste semble communiqué avec un serveur C2. Quel est le chemin (path) employé par le C2?
+  
+  Format de flag: POLYCYBER{chemin}
+  
+  PS: Si l'URL employé par le C2 est http://poly.pwn/ctf2026/, le flag serait POLYCYBER{ctf2026}
+  
+  ## Description (english)
+  
+  Dr. Moreau received a call from "IT support". Since then, his workstation seemed to have been compromised. Uncover what lies beneath the attack.
+  
+  According to the alerts, the workstation appears to be communicating with a C2 server. What is the path used by the C2?
+  
+  Flag format: POLYCYBER{path}
+  
+  Note: If the C2 URL used is http://poly.pwn/ctf2026/, the flag would be: POLYCYBER{ctf2026}
+
+flags:
+- POLYCYBER{itmonitor}
+
+requirements:
+    - "Lab Attack 3"
+
+file:
+- ./monitor.ps1
+
+tags:
+- forensics
+- A:chrichriGeorgie
+- facile

@@ -1,0 +1,37 @@
+name: Lab Attack 1
+author: ChrichriGeorgie
+category: forensics
+
+type: standard
+value: 4
+
+description: |-
+  ## Description (français)
+
+  Le Dr. Moreau a reçu un appel du "support technique". Depuis l'appel, son poste semble avoir été compromis. Comprenez ce qui se cache derrière l'attaque.
+  
+  L'attaquant a demandé au Dr. Moreau d'installé un outil. Quel est cet outil?
+
+  Format de flag: POLYCYBER{nomoutilenminuscule}
+
+  ## Description (english)
+
+  Dr. Moreau received a call from "IT support". Since then, his workstation seemed to have been compromised. Uncover what lies beneath the attack.
+
+  The threat actor asked Dr. Moreau to install a tool. Which tool was installed?
+
+  Flag format: POLYCYBER{toolnameinlowercase}
+
+flags:
+- POLYCYBER{anydesk}
+
+file:
+- ./lab_attack_artifacts.7z
+
+tags:
+- forensics
+- A:chrichriGeorgie
+- facile
+
+requirements: 
+  - Rules

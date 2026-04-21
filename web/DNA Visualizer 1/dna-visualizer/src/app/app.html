@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DNA Visualizer</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <!-- https://media.geeksforgeeks.org/wp-content/uploads/20241016151154509372/Background-image.png -->
+  <body>
+    
+    <div class="window" style="margin: 0px; width: 100%;">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          <p style="font-size: medium; padding: 2%;">Navigation</p>
+        </div>
+      </div>
+      <div class="window-body">
+        <button (click)="goToPage('');" style="font-size: medium; margin: 0.2%;">Home</button>
+        <button (click)="goToPage('visualizer');" style="font-size: medium; margin: 0.2%;">DNA Visualizer</button>
+        <button (click)="goToPage('profile');" style="font-size: medium; margin: 0.2%;">Set Profile</button>
+      </div>
+      
+    </div>    
+    
+  </body>
+  <router-outlet />
+</html>
+

@@ -1,0 +1,31 @@
+name: Project_Mosaic
+author: anthchn
+category: misc
+
+type: standard
+value: 8
+
+description: |-
+  ## Description (français)
+  Une transmission suspecte a été interceptée aux abords d’un laboratoire clandestin.  
+  Les chercheurs ont disparu, mais une capture réseau semble contenir un message caché.  
+  Analysez les protocoles et découvrez ce que le laboratoire tentait de dissimuler.
+
+  ## Description (english)
+  A suspicious transmission was intercepted near a clandestine laboratory.  
+  The researchers have vanished, but a network capture appears to contain a hidden message.  
+  Analyze the protocols and uncover what the lab was trying to conceal.
+
+flags:
+  - POLYCYBER{QR_C0D3_1N_PCAP}
+
+files:
+  - challenge.pcap
+
+tags:
+  - misc
+  - A:anthchn
+  - moyen
+
+requirements: 
+  - Rules

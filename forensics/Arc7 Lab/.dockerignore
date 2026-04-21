@@ -1,0 +1,5 @@
+terraform/
+tools/
+dns/
+.git/
+*.md

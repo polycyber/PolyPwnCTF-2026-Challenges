@@ -1,0 +1,45 @@
+name: "ARC-7 — Silo de récupération"
+author: Pollux
+category: forensics
+
+type: zync
+playbook_name: http
+deploy_parameters:
+  # Build: docker build -f ctf-arc7-lab/Dockerfile -t ghcr.io/YOUR_ORG/arc7-vault-lab:terminal ctf-arc7-lab
+  image: "arc7-terminal"
+#  http_port: 8080
+  unique: true
+
+# Platform points: within CFSS band midpoint (~11); adjust to your scoring policy.
+value: 11
+
+description: |-
+  ## Description (français)
+
+  Année **2089**. Il ne reste presque rien de la surface. Une station ARC-7, enfouie sous terre, a laissé une console de récupération : dernier écran encore capable d'afficher du texte. Les bandes magnétiques et les disques sont poussière ; les opérateurs d'origine parlaient pourtant d'archives répliquées dans la couche la plus improbable du réseau.
+
+  Votre mission : reconstituer le message perdu. Ce n'est pas une énigme de chiffrement : c'est un problème de provenance, d'ordre et de recomposition. Ce que vous voyez au premier regard n'est peut-être pas ce qu'il faut suivre.
+
+  ## Description (english)
+
+  **2089.** The surface is mostly gone. **ARC-7**, a subsurface station, left behind a **recovery console**—one of the last screens that still renders text. Magnetic tapes and disks are dust; still, the old operators swore that **copies of the archive lived in the strangest layer of the network**.
+
+  Your job is to **rebuild the lost message**. This is not a crypto puzzle: it is about **where to look**, **in what order**, and **how pieces fit**. What the UI tells you loudly may not be the path.
+
+flags:
+  - polycyber{arc7_vault_txt_recovery}
+
+tags:
+  - forensics
+  - dns
+  - A:Pollux
+  # CFSS 0.3 per https://res260.github.io/cfss/CFSS.html & https://github.com/res260/CFSS
+  # TS:I (4–6): DNS/DoH, chained TXT→gzip manifest, ordered fragment recovery.
+  # E:H (5–8): many steps, decoys/junk, non-obvious entry hints, small solver or heavy dig.
+  # HSFC:N (0): forensics is not HSFC-Y for a general-audience CTF.
+  # Range = 4+5+0 .. 6+8+0 = 9–14
+  - CFSS:0.3/TS:I/E:H/HSFC:N=9-14
+  - difficile
+
+requirements:
+  - Rules

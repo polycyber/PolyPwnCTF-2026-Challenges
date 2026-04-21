@@ -1,0 +1,38 @@
+name: "Nexus Labs — Stage 1"
+author: Pollux
+category: forensics
+
+type: zync
+playbook_name: http
+deploy_parameters:
+  image: "ghcr.io/polypwn/nexus-labs:stage-1"
+  http_port: 8080
+  unique: true
+
+value: 3
+
+description: |-
+  ## Description (français)
+
+  Une source anonyme vous a transmis l'adresse du portail interne de **Nexus Laboratories** — une installation dont l'existence est officiellement niée.
+
+  En fouillant le site, vous remarquez que ce dernier est vibe codé. Les développeurs ont peut-être agi vite. Trop vite. Il arrive que la précipitation laisse des traces.
+
+  ## Description (english)
+
+  An anonymous source has passed you the address of the **Nexus Laboratories** internal portal — a facility whose existence is officially denied.
+
+  Poking around the site, you notice the it was vibe coded. The developers might have acted fast. Too fast. Haste has a way of leaving things behind.
+
+
+flags:
+- polycyber{exp0sed_g1t_1s_a_cl4ssic_m1stake}
+
+tags:
+- forensics
+- A:Pollux
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+- facile
+
+requirements: 
+  - Rules

@@ -1,0 +1,62 @@
+name: ghost-in-the-heap
+author: Seneque
+category: forensics
+
+type: standard
+
+files:
+  - challenge/dist/memdump.raw
+
+# No deployment — static file challenge (memdump.raw distributed via platform)
+
+# Challenge Difficulty Scoring System (CFSS)
+# https://res260.github.io/cfss/
+# Format: CFSS:X.X/TS:X/E:X/HSFC:N=X-X
+value: 5
+
+description: |-
+  ## Description (français)
+
+  Une anomalie a été détectée sur l'un de nos serveurs. Avant que l'équipe de
+  réponse aux incidents ne puisse intervenir, un processus inconnu avait déjà
+  exécuté ses opérations et terminé. Le seul artefact récupéré est un dump
+  physique de la mémoire vive capturé quelques instants après la fin du
+  processus.
+
+  Les analystes ont noté que le processus semblait effectuer une activité réseau,
+  mais aucun trafic suspect n'a été observé sur le fil. Quoi qu'il ait envoyé —
+  ou tenté d'envoyer — cela a disparu du réseau. Le processus semble également
+  avoir pris des mesures délibérées pour effacer ses traces en mémoire avant que
+  le dump ne soit réalisé.
+
+  Ou pas ?
+
+  **Votre mission :** analysez le dump mémoire et récupérez les données exfiltrées.
+
+
+  ## Description (english)
+
+  An anomaly was detected on one of our servers. Before the incident response
+  team could intervene, an unknown process had already run and exited. The only
+  artifact recovered is a raw physical memory dump captured moments after the
+  process terminated.
+
+  Analysts noted that the process appeared to be performing network activity, but
+  no suspicious traffic was observed on the wire. Whatever it sent — or tried to
+  send — is gone from the network. The process also seemed to take deliberate
+  steps to erase its tracks from memory before the dump was taken.
+
+  Or did it?
+
+  **Your mission:** analyze the memory dump and recover the exfiltrated data.
+
+flags:
+  - polycyber{uDp_sUre_1s_fUN-uh}
+
+tags:
+  - A:Seneque # Author tag
+  - V:PolyPWN # Venue/Event tag
+  - CFSS:0.2/TS:A/E:E/HSFC:N=3-5 # Difficulty scoring
+
+requirements: 
+  - Rules

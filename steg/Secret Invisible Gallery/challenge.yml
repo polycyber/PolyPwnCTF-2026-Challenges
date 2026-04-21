@@ -1,0 +1,34 @@
+name: Secret inVisible Gallery
+author: Yxène
+category: steg
+
+type: standard
+value: 2
+
+description: |-
+  ## Description (français)
+
+  Une étrange image vient de sortir d'une salle du laboratoire nommée "Secret inVisible Gallery".
+
+  Que peut-il bien se cacher **derrière** ?
+
+  ## Description (english)
+
+  A strange image has just emerged from a room in the laboratory called the "Secret Invisible Gallery".
+
+  What could be hiding **behind** it?
+
+flags:
+- polycyber{SVG_is_just_text_2HZbmVV6}
+
+files:
+- invisible.svg
+
+tags:
+- steg
+- A:Yxène
+- facile
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+
+requirements: 
+  - Rules

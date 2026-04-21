@@ -1,0 +1,8 @@
+services:
+  pwn:
+    build: ./
+    container_name: pmj
+    ports:
+      - "1001:1001"
+    restart: unless-stopped
+    read_only: true

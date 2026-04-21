@@ -1,0 +1,32 @@
+name: "Nexus Labs — Stage 4"
+author: Pollux
+category: forensics
+
+type: standard
+
+value: 11
+
+description: |-
+  ## Description (français)
+
+  Les ingénieurs de Nexus Labs ne font pas tous confiance aux mêmes outils. Certaines parties de l'infrastructure ont une histoire plus longue — des systèmes parallèles, maintenus en silence, qui ont leurs propres façons de stocker ce qui ne devrait pas l'être.
+
+  Même instance que l'étape 1.
+
+  ## Description (english)
+
+  Nexus Labs' engineers don't all trust the same tools. Parts of the infrastructure have a longer history — parallel systems, quietly maintained, with their own ways of storing things that shouldn't be stored.
+
+  Same instance as stage 1.
+
+flags:
+- polycyber{hg_extras_r3v34l_4ll}
+
+tags:
+- forensique
+- A:Pollux
+- CFSS:0.3/TS:A/E:M/HSFC:N=9-14
+- dur
+
+requirements: 
+  - Rules

@@ -1,0 +1,35 @@
+name: Wireless Whispers
+author: Yxène
+category: network
+
+type: standard
+value: 4
+
+description: |-
+  ## Description (français)
+
+  Lors d'une phase de repérage, vous avez réussi à capturer le trafic Wifi du laboratoire avec une antenne.
+  
+  Malheureusement, le trafic semble chiffré...
+
+  ## Description (english)
+
+  During a reconnaissance phase, you managed to capture the lab's Wi-Fi traffic with an antenna.
+  
+  Unfortunately, the traffic appears to be encrypted...
+
+flags:
+- polycyber{W1F1_P4SSW0RD_CR4CK1NG_r12Bug0c5N1F}
+
+files:
+- wifi_capture.pcap
+- rockyou.txt.tar.gz
+
+tags:
+- network
+- A:Yxène
+- moyen
+- CFSS:0.3/TS:I/E:L/HSFC:N=4-7
+
+requirements: 
+  - Rules

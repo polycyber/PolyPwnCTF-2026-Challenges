@@ -1,0 +1,34 @@
+name: FIC
+author: !ntrus'!on feat RAVEN
+category: pwn
+
+type: zync
+value: 10
+
+playbook_name: tcp
+deploy_parameters:
+  image: ghcr.io/polycyber/polypwn2026/fic:latest
+  published_ports:
+    - 1000
+
+description: |-
+  ## Description (français) 
+
+  Essaie-le ...
+
+  ## Description (english)
+  Try it ...
+
+flags:
+  - POLYCYBER{CFI_Bypass_ICP_12e6fdbe860cd970037ecdacbc4c59c8}
+
+tags:
+  - PWN
+  - "!ntrus'!on feat RAVEN"
+  - difficult
+
+files:
+  - public/pod
+
+requirements: 
+  - Rules

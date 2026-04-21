@@ -1,0 +1,32 @@
+name: "Nexus Labs — Stage 2"
+author: Pollux
+category: forensics
+
+type: standard
+
+value: 8
+
+description: |-
+  ## Description (français)
+
+  Le premier accès vous a fourni des informations utiles, mais les opérateurs de Nexus Labs sont prudents — ou du moins, ils pensent l'être. Des éléments ont été cachés, mais « cachés » ne signifie pas « effacés ».
+
+  Même instance que l'étape 1.
+
+  ## Description (english)
+
+  The first foothold gave you something useful, but Nexus Labs' operators are careful — or so they think. Some material has been removed, but "removed" doesn't mean "gone".
+
+  Same instance as stage 1.
+
+flags:
+- polycyber{d3ad_c0mm1ts_t3ll_t4les_f0rgott3n}
+
+tags:
+- forensique
+- A:Pollux
+- CFSS:0.3/TS:I/E:M/HSFC:N=6-10
+- moyen
+
+requirements: 
+  - Rules

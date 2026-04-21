@@ -1,0 +1,34 @@
+name: Lab Attack 4
+author: ChrichriGeorgie
+category: forensics
+
+type: standard
+value: 5
+
+description: |-
+  ## Description (français)
+  
+  Le Dr. Moreau a reçu un appel du "support technique". Depuis l'appel, son poste semble avoir été compromis. Comprenez ce qui se cache derrière l'attaque.
+  
+  L'attaquant a ajouté une tache planifié comme persistence. Quelle est le nom de cette tâche?
+  
+  Format de flag: POLYCYBER{Nom De Tache}
+  
+  ## Description (english)
+  
+  Dr. Moreau received a call from "IT support". Since then, his workstation seemed to have been compromised. Uncover what lies beneath the attack.
+  
+  The threat actor added a scheduled task for persistence. What is the task name?
+  
+  Flag format: POLYCYBER{Task Name}
+
+flags:
+- POLYCYBER{IT Support Monitor}
+
+requirements:
+    - "Lab Attack 2"
+
+tags:
+- forensics
+- A:chrichriGeorgie
+- moyen

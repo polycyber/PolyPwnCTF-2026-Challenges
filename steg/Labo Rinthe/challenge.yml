@@ -1,0 +1,39 @@
+name: Labo-rinthe
+author: Yxène
+category: steg
+
+type: zync
+playbook_name: http
+value: 3
+
+deploy_parameters:
+  image: laborinthe
+  http_port: 5000
+  unique: true
+
+description: |-
+  ## Description (français)
+
+  Vous voilà complètement perdu dans le laboratoire !
+  Vous avez beau suivre les panneaux, vous revenez toujours sur vos pas...
+
+  Le flag **ne respecte pas** le format habituel (`polycyber{}`).
+
+  ## Description (english)
+
+  You're completely lost in the laboratory!
+  No matter how hard you try to follow the signs, you always end up back where you started...
+
+  The flag **does not comply** with the usual format (`polycyber{}`).
+
+flags:
+- r3d1r3cts_m4z3-9ug
+
+tags:
+- steg
+- A:Yxène
+- facile
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+
+requirements: 
+  - Rules

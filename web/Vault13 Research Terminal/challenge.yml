@@ -1,0 +1,65 @@
+name: vault13-research-terminal
+author: Seneque
+category: web
+
+type: zync
+
+playbook_name: custom_compose
+deploy_parameters:
+  unique: false
+  compose_definition: |-
+    version: '3.8'
+    services:
+      haproxy:
+        image: vault13-haproxy:latest
+        ports:
+          - "8080"
+        depends_on:
+          - backend
+        networks:
+          - vault13
+      backend:
+        image: vault13-backend:latest
+        hostname: backend
+        environment:
+          - FLAG=polycyber{smuggl3d_p4st_th3_w4st3l4nd_f1r3w4ll}
+        networks:
+          - vault13
+    networks:
+      vault13:
+        driver: bridge
+  env:
+    FLAG: "polycyber{smuggl3d_p4st_th3_w4st3l4nd_f1r3w4ll}"
+    TZ: Europe/Zurich
+
+value: 3
+
+description: |-
+  ## Description (français)
+
+  Année 2287. Le Terminal de Recherche du Vault-13 protège des données classifiées
+  grâce à un pare-feu maison : toute première tentative d'accès est bloquée.
+
+  Votre mission : accéder aux données de recherche classifiées et récupérer le flag.
+
+
+
+  ## Description (english)
+
+  Year 2287. The Vault-13 Research Terminal protects classified data with a custom
+  firewall: any first attempt to access is blocked.
+
+  Your mission: access the classified research data and retrieve the flag.
+
+  
+
+flags:
+  - polycyber{smuggl3d_p4st_th3_w4st3l4nd_f1r3w4ll}
+
+tags:
+  - A:Seneque
+  - V:PolyPWN
+  - CFSS:2.5/TS:B/E:E/HSFC:N=0-0
+
+requirements: 
+  - Rules
