@@ -6,7 +6,7 @@
 
 Dans le cadre des nouvelles procédures IAM suivies par le laboratoire, nous disposons maintenant d'un mot de passe universel pour le laboratoire.
 
-Malheureusement, je l'ai perdu, mais j'aimerais beaucoup le récupérer si vous êtes en mesure de m'aider...
+Malheureusement, je l’ai perdu, mais j’aimerais beaucoup le récupérer si vous êtes en mesure de m'aider...
 
 ## Description (english)
 

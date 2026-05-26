@@ -33,3 +33,5 @@ tags:
   - A:ptrstr
   - difficile
 
+requirements: 
+  - Rules

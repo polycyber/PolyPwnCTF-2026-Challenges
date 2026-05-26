@@ -1,5 +1,5 @@
 # Nom du défi
-Dexter's Euclidean Experiment
+Dexter’s Euclidean Experiment
 
 **`Auteur·e`** [Hib00boo](https://github.com/Hib00boo)
 

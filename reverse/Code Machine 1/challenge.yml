@@ -40,3 +40,5 @@ tags:
   - A:Romain
   - moyen
 
+requirements: 
+  - Rules

@@ -5,7 +5,7 @@
   
   
   ## Description (english)
-  Great Scott! Doc Brown's latest experiment with the API was a success, but it seems he accidentally caused a temporal leak with the Polyrean 2026.
+  Great Scott! Doc Brown’s latest experiment with the API was a success, but it seems he accidentally caused a temporal leak with the Polyrean 2026.
   While the API is now only broadcasting health data, the "bits" of our secret have been scattered across the space-time continuum.
 
 ### flag:

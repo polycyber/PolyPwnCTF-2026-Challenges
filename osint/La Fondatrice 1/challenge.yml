@@ -31,6 +31,9 @@ flags:
 
 attempts: 10
 
+requirements: 
+  - Rules
+
 tags:
 - osint
 - A:F1b0n4cc1

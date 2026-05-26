@@ -24,6 +24,7 @@ description: |-
 
   Poking around the site, you notice the it was vibe coded. The developers might have acted fast. Too fast. Haste has a way of leaving things behind.
 
+
 flags:
 - polycyber{exp0sed_g1t_1s_a_cl4ssic_m1stake}
 
@@ -33,3 +34,5 @@ tags:
 - CFSS:0.3/TS:B/E:L/HSFC:N=2-4
 - facile
 
+requirements: 
+  - Rules

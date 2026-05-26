@@ -4,7 +4,7 @@
 
 ## Description (français)
 
-J'ai entendu dire que le labo a récemment déployé un nouveau service de déploiement de mises à jour. Avec les expériences qu'ils font... disons que j'aimerais avoir un certain levier. Peut-être tu pourrais me donner accès à son serveur ?
+J’ai entendu dire que le labo a récemment déployé un nouveau service de déploiement de mises à jour. Avec les expériences qu'ils font... disons que j’aimerais avoir un certain levier. Peut-être tu pourrais me donner accès à son serveur ?
 
 ## Description (english)
 

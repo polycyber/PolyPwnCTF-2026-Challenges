@@ -28,3 +28,5 @@ tags:
 - CFSS:0.3/TS:A/E:M/HSFC:N=9-14
 - dur
 
+requirements: 
+  - Rules

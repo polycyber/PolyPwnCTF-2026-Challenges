@@ -30,3 +30,5 @@ tags:
 - facile
 - CFSS:0.3/TS:B/E:L/HSFC:N=2-4
 
+requirements: 
+  - Rules

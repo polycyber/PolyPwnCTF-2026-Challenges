@@ -14,7 +14,7 @@ description: |-
   ## Description (english)
 
   The world is falling apart. Head Scientist Jason has successfully synthesized the cure for the zombie virus, but a group of anarchists is tracking his digital trail.
-  To keep the formula's location safe, Jason hid far away and left a note.
+  To keep the formula’s location safe, Jason hid far away and left a note.
 
 flags:
   - POLYCYBER{tH3_s3CRet_f0rmuLA_1s_83h!Nd_ThE_PaiN7!N6_!N_MY_0ffIce}
@@ -28,3 +28,5 @@ tags:
   - CFSS:0.3/TS:B/E:L/HSFC:N=2-4
   - facile
 
+requirements: 
+  - Rules

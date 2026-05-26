@@ -16,7 +16,7 @@ On peut ainsi exécuter le programme plusieurs fois et extraire les lettres du f
 
 ## Solution (anglais)
 
-By analyzing the program, we realize that the scientist uses the flag as a key to encrypt his exceptional solutions (the flag is the key). However, he wasn't careful and leaked several parts of the flag in an attempt to simulate randomness in the program.
+By analyzing the program, we realize that the scientist uses the flag as a key to encrypt his exceptional solutions (the flag is the key). However, he wasn’t careful and leaked several parts of the flag in an attempt to simulate randomness in the program.
 
 How to retrieve the bits of the flag:
 0: Leaked in the choice to add, or not, 0.5°C to the temperature.

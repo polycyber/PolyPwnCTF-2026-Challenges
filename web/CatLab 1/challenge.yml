@@ -62,6 +62,7 @@ description: |-
 
   Rumor has it that the lab is conducting secret experiments known as transmogrification... Can you compromise their portal and uncover the algorithm behind these transformations?
 
+
 flags:
 - polycyber{s0m37hing_is_wr0ng_wi7h_my_c47}
 
@@ -70,3 +71,5 @@ tags:
 - A:Niftic
 - CFSS:0.3/TS:I/E:M/HSFC:N=6-10
 
+requirements: 
+  - Rules

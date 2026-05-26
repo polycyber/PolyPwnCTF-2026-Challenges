@@ -38,3 +38,5 @@ tags:
   - facile
   # - facile/moyen/dur
 
+requirements: 
+  - Rules
