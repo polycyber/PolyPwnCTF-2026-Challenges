@@ -2,6 +2,7 @@
 services:
   web:
     build: .
+    image: rabb-it-hol:latest
     ports:
       - "8080:80"
       - "2222:22"
