@@ -31,8 +31,6 @@ flags:
 
 attempts: 10
 
-requirements: 
-  - Rules
 
 tags:
 - osint
