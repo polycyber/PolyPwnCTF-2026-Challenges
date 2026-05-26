@@ -10,7 +10,6 @@ deploy_parameters:
   http_port: 8000
   image: ghcr.io/polycyber/challenge-steg-backtothepast:latest
 
-
 value: 4
 
 description: |-
@@ -21,7 +20,7 @@ description: |-
   
   
   ## Description (english)
-  Great Scott! Doc Brown’s latest experiment with the API was a success, but it seems he accidentally caused a temporal leak with the Polyrean 2026.
+  Great Scott! Doc Brown's latest experiment with the API was a success, but it seems he accidentally caused a temporal leak with the Polyrean 2026.
   While the API is now only broadcasting health data, the "bits" of our secret have been scattered across the space-time continuum.
 
 flags:
@@ -31,5 +30,3 @@ tags:
   - A:Pollux
   - CFSS:0.3/TS:L/E:M/HSFC:N=3-5
 
-requirements: 
-  - Rules

@@ -33,7 +33,6 @@ description: |-
 
   **Votre mission :** analysez le dump mémoire et récupérez les données exfiltrées.
 
-
   ## Description (english)
 
   An anomaly was detected on one of our servers. Before the incident response
@@ -58,5 +57,3 @@ tags:
   - V:PolyPWN # Venue/Event tag
   - CFSS:0.2/TS:A/E:E/HSFC:N=3-5 # Difficulty scoring
 
-requirements: 
-  - Rules

@@ -12,7 +12,7 @@ On observe :
 * Une séquence de Deauthentication frames
 * Puis un 4-Way Handshake
 
-Les trames de désauthentification (Deauth) sont envoyées par un attaquant pour forcer un client à se déconnecter du point d’accès WiFi.
+Les trames de désauthentification (Deauth) sont envoyées par un attaquant pour forcer un client à se déconnecter du point d'accès WiFi.
 Cela a pour but de forcer sa ré-authentification au point d'accès en effectuant un 4-way handshake.
 
 #### Le 4-Way Handshake (WPA2)
@@ -23,9 +23,9 @@ Le 4-way handshake est le mécanisme utilisé par WPA/WPA2-PSK pour :
 * Dériver les clés de chiffrement de session
 * Établir une communication chiffrée
 
-Il s’agit d’un échange en **4 messages EAPOL** entre le client et le point d’accès.
+Il s'agit d'un échange en **4 messages EAPOL** entre le client et le point d'accès.
 
-Le mot de passe n’est jamais transmis en clair, mais le handshake contient suffisamment d’informations pour permettre une attaque par dictionnaire hors ligne.
+Le mot de passe n'est jamais transmis en clair, mais le handshake contient suffisamment d'informations pour permettre une attaque par dictionnaire hors ligne.
 
 
 ### Extraction du hash WiFi

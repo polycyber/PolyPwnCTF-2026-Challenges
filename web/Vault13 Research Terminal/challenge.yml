@@ -42,8 +42,6 @@ description: |-
 
   Votre mission : accéder aux données de recherche classifiées et récupérer le flag.
 
-
-
   ## Description (english)
 
   Year 2287. The Vault-13 Research Terminal protects classified data with a custom
@@ -61,5 +59,3 @@ tags:
   - V:PolyPWN
   - CFSS:2.5/TS:B/E:E/HSFC:N=0-0
 
-requirements: 
-  - Rules
